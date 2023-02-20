@@ -1,5 +1,3 @@
-import "./index.css";
-
 import { Refine, AuthProvider } from "@pankod/refine-core";
 import { notificationProvider, RefineSnackbarProvider, CssBaseline, GlobalStyles, ReadyPage, ErrorComponent } from "@pankod/refine-mui";
 import dataProvider from "@pankod/refine-simple-rest";

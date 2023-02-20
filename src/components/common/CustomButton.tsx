@@ -2,9 +2,10 @@ import React from "react";
 import { Button } from "@pankod/refine-mui";
 import { CustomButtonProps } from "interfaces/common";
 
-const CustomButton: React.FC<CustomButtonProps> = ({ type, fullWidth, handleClick, title, icon, backgroundColor, color }) => {
+const CustomButton: React.FC<CustomButtonProps> = ({ type, fullWidth, handleClick, title, icon, backgroundColor, color, disabled }) => {
     return (
         <Button
+            disabled={disabled}
             type={type === "submit" ? "submit" : "button"}
             onClick={handleClick}
             sx={{
@@ -15,7 +16,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ type, fullWidth, handleClic
                 backgroundColor,
                 color,
                 gap: "10px",
-                transform: "Capitalize",
+                textTransform: "Capitalize",
                 fontSize: "16px",
                 fontWeight: "600",
                 "&:hover": {

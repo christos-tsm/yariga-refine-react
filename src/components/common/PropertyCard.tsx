@@ -7,7 +7,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ title, location, id, photo,
     return (
         <Card
             component={Link}
-            to={`/properties/${id}`}
+            to={`/properties/show/${id}`}
             sx={{ maxWidth: "330px", borderRadius: "10px", padding: "10px", "&:hover": { boxShadow: "0 22px 45px 2px rgba(176,176,176,0.1)" }, cursor: "pointer", textDecoration: "none" }}
             elevation={0}
         >

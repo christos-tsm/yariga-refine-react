@@ -23,7 +23,7 @@ const ProgressBar = ({ title, percentage, color }: { title: string; percentage: 
 const PropertyReferrals: React.FC = () => {
     return (
         <Box p={4} flex={1} bgcolor="#fcfcfc" id="chart" display="flex" flexDirection="column" borderRadius="12px">
-            <Typography fontSize={14} color="#808191">
+            <Typography fontSize={18} fontWeight={600} color="#11142d">
                 Property Referrals
             </Typography>
             <Stack gap={4} my="20px" direction="column">
